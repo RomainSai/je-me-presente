@@ -1,0 +1,22 @@
+<h1>Bienvenue dans la création d'utilisateurs ! </h1>
+
+<p>On crée ici un nouvel utilisateur</p>
+
+ <form action="/new" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+   Username: <br>
+  <input type="text" name="username"><br>
+  <br>
+   Bio: <br>
+  <textarea name="bio">Entre ton texte ici...</textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+<!-- Ici, on crée un formulaire qui va demander à l'utilisateur son Nom et sa Bio.
+On stocke ces infos grâce aux variables username et bio de notre formulaire.
+"action" nous permet de signifier la page où l'on trouve le formulaire.
+On utilise la méthode POST car on veut stocker nos informations et les mettre à jour dans notre modèle User. -->
