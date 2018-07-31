@@ -5,11 +5,10 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
-# Use sqlite pour le development et les tests
 group :development, :test do
   gem 'sqlite3'
 end
-#use pg pour la production
+
 group :production do
   gem 'pg'
 end
